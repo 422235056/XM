@@ -1,0 +1,50 @@
+/* pages/message/message.wxss */
+/* 1,网页背景灰色 */
+page{
+    background: #fafafa;
+}
+/* 2,卡片区域快中布局 使弹性布局方向 按列方式 */
+.card{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10rpx;       /*圆角*/
+    margin:60rpx 20rpx;     /*补丁*/
+    padding:  80rpx;
+    display: flex;
+    flex-direction: column;
+}
+/* 3,标题 */
+.card-title{
+    font-size: 25rpx;
+    margin-bottom: 20rpx;
+}
+/* 日期-网址 */
+.card-url-time{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #ccc;
+}
+/* 4,日期 */
+.card-time{
+    font-size: 23rpx;
+    color:#333;
+    margin-top: 30rpx;
+    padding-bottom: 20rpx;
+}
+/* 5,图片 */
+.card-img{
+    height: 300rpx;
+    width: 100%;
+}
+/* 6,网址 */
+.card-url{
+    font-size: 23rpx;
+    color: #333;
+    margin-top: 30rpx;
+    padding-bottom: 20rpx;
+}
+/* 7,查看详情 */
+.card-read{
+    font-size: 30rpx;
+    color: #a6a;
+}

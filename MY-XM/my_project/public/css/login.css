@@ -1,0 +1,14 @@
+ body .login_zhuti ul{
+     width: 12%;
+     margin: 0 auto;
+     text-align: center;
+ }
+ li{
+     list-style-type: none
+ }
+ .qq img{
+     width: 1.2rem
+ }
+ .wj{
+     text-align: right
+ }

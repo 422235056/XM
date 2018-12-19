@@ -1,0 +1,162 @@
+/* 导航栏 */
+.daohang{
+  display: flex;
+  justify-content: space-around;
+  width: 375px;
+}
+/* 导航栏--logo */
+.daohang .logo{
+  width: 100rpx;
+}
+.daohang .logo image{
+  width: 80rpx;
+  height: 80rpx;
+}
+/* 导航栏--单品-资讯 */
+.daohang .dp,.daohang .zx{
+  width: 70rpx;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  line-height: 70rpx;
+}
+/* 导航栏--单品-资讯  点击效果 */
+.daohang .daohang_hover{
+  color: #a6a;
+  opacity: 0.5;
+}
+/* 导航栏--搜素 */
+.daohang .ss{
+  width: 180rpx;
+}
+.daohang .ss input{
+  margin-top: 16rpx;
+  font-size: 21rpx;
+  padding-left: 10rpx;
+  border: 1rpx solid #ccc;
+  border-radius:30rpx;
+  width: 180rpx;
+  height: 10rpx;
+}
+
+/* 轮播图 */
+.slider,.slider image,.slider swiper{
+  width: 100%;
+  height: 390rpx;
+}
+.slider swiper swiper-item{
+  text-align: center;
+}
+.slider swiper swiper-item image{
+  width: 390rpx;
+  height: 330rpx;
+  margin-top: 20rpx;
+}
+/* 第2部分,弹性布局 三行三咧 */
+.index-nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+.index-nav .nav-item{
+  width: 33.3%;
+  height: 200rpx;
+  display: flex;    
+  flex-direction: column;   /*子元素按列排*/
+  justify-content: center;  /*水平居中*/
+  align-items: center;      /*垂直居中*/
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #ccc;
+  position: relative;   /*相对定位*/
+}
+/* 五个小图标 */
+.index-nav .nav-item{
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 40rpx;
+  background: linear-gradient(0deg,#fff,#dce)
+}
+/* 五个小图标--图片 */
+.index-nav .nav-item image{
+  width: 60rpx;
+  height: 60rpx;
+}
+/* 五个小图标--文字 */
+.index-nav .nav-item text{
+  color: #000;
+  font-size: 18rpx;
+}
+/*楼层样式*/
+.floor{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/*楼层样式--左边*/
+.floor .floor_left{
+  width: 45%;
+  height: 150rpx;
+  margin-right: 30rpx;
+}
+/* 图片与文字两端对齐 */
+.floor .floor_left navigator{
+  display: flex;
+  justify-content: space-between;
+}
+/*楼层样式--左边-图片*/
+.floor .floor_left image{
+  width: 150rpx;
+  height: 150rpx;
+}
+/* 楼层样式--左边-标题 */
+.floor .floor_left .xx_title{
+  font-size: 25rpx;
+  color: #333;
+  margin-top: 20rpx;
+}
+/* 楼层样式--左边-详情 */
+.floor .floor_left .xx_details{
+  font-size: 20rpx;
+  color: #aaa;
+  margin-top: 20rpx;
+}
+/* 楼层样式--左边-价格 */
+.floor .floor_left .xx_price{
+  color: #a6a;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+/*楼层样式--右边*/
+.floor .floor_right{
+  width: 45%;
+  height: 150rpx;
+  margin-right: 30rpx;
+}
+/* 图片与文字两端对齐 */
+.floor .floor_right navigator{
+  display: flex;
+  justify-content: space-between;
+}
+/*楼层样式--左边-图片*/
+.floor .floor_right image{
+  width: 150rpx;
+  height: 150rpx;
+}
+/* 楼层样式--右边-标题 */
+.floor .floor_right .xx_title{
+  font-size: 25rpx;
+  color: #333;
+  margin-top: 20rpx;
+}
+/* 楼层样式--右边-详情 */
+.floor .floor_right .xx_details{
+  font-size: 20rpx;
+  color: #aaa;
+  margin-top: 20rpx;
+}
+/* 楼层样式--右边-价格 */
+.floor .floor_right .xx_price{
+  color: #a6a;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}

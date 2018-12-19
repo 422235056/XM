@@ -1,0 +1,48 @@
+page{
+    background-color:#fff;
+}
+/*商品项目*/
+.shop{
+   padding:20rpx;
+   border-bottom:1rpx solid #ddd;
+   display:flex;
+   position: relative;
+}
+/* 商品图片 */
+.shop-img{
+    width:160rpx;
+    height:160rpx;
+    margin-right:20rpx;
+}
+/* 商品-文字列表 */
+.shop-info{
+    display:flex;
+    flex-direction:column;
+    width:520rpx;
+    font-size:12px;
+    color:#aaa;
+    line-height:1.5;
+}
+/* 商品标题 */
+.shop-title{
+    font-size:16px;
+    color:#333;
+    width:380rpx;
+    font-weight:bold; 
+}
+/* 商品详情*/
+.shop-details{
+    width: 300rpx;
+}
+/* 商品价格 */
+.shop-price{
+    margin-top:20rpx;
+    font-size: 36rpx;
+    color: #a6a;
+}
+/* 商品打分 */
+.shop-start{
+    position: absolute;
+    right:20rpx;
+    top:20rpx;
+}

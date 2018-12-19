@@ -1,0 +1,19 @@
+/* pages/profile/profile.wxss */
+.avatar{
+    height: 350rpx;
+    background-color:#dce;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.avatar image{
+    width: 180rpx;
+    height: 180rpx;
+    border: 10rpx solid rgba(177, 36, 153, 0.1);
+    border-radius: 50%;
+}
+.divider{
+    background: #eee;
+    height: 15rpx;
+    width: 100%;
+}

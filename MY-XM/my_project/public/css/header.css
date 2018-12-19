@@ -1,0 +1,68 @@
+/* 导航a标签*/
+header>ul a{
+    background:none;
+    color:#000 !important;
+    font-size:1.1rem;
+    text-decoration: none;
+}
+/* 导航a标签悬停 */
+header>ul a:hover{
+    color:#612176 !important;
+    text-decoration: none;
+}
+header .li_hover>a{
+    display: block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}
+header .li_hover>a:hover{
+    border-bottom:2px solid #612176;
+}
+/* 导航--三个主选项下边框 */
+a.header_hover1:hover li.li_hover1{
+    border-bottom:1px solid #612176;
+}
+/*下拉菜单*/
+.downmenu{
+    position:relative;
+}
+.downlist{
+    position: absolute;
+    right: -12px;
+    background: #fff;
+    z-index:20;
+    height:0px;
+    overflow: hidden;
+    top: 32px;
+}
+.downlist>li{
+    margin: 0;
+    height:30px;
+    line-height: 20px;
+    width: 65px;
+}
+.downlist>li a{
+    width: 100%;
+    margin-left: -20px;
+    font-size: 16px;
+}
+.downmenu:hover .downlist{
+    height:280px;
+    transition: all .5s ;
+}
+/* 下拉菜单字体  */
+header ul.dropdown-menu li a{
+    font:600 0.8rem "微软雅黑";
+    text-decoration: none;
+}
+/* 导航--搜索框 */
+header ul li .header_input{
+    border-radius:1.2rem;
+    width: 70%;
+    height: 2.0rem;
+    margin-left: 5rem;
+    padding-left:1.1rem;
+    border:1px solid #333;
+    outline: none; 
+}

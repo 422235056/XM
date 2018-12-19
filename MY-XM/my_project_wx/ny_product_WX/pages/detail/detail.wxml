@@ -1,0 +1,43 @@
+<!-- 轮播区域 -->
+<view class="slider">
+  <swiper autoplay interval="3500" duration="400" indicator-dots="{{true}}">
+    <swiper-item wx:for="{{imagelist}}" wx:key="id">
+      <image src="{{item.img_url}}" mode="aspectFill" lazy-load/>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 商品信息:价格;数量;条款按钮 -->
+<view class="divider"></view>
+<view class="cell">
+    <navigator class="cell-item arrow">
+        <text class="shop-title">商品名称: {{info.title}}</text>
+    </navigator>
+    <navigator class="cell-item arrow">
+        <text>价格</text>
+        <view class="priceInfo">
+            <text class="oldprice">市场价:{{info.oldprice}}</text>
+            <text class="newprice">惊爆价:{{info.newprice}}</text>
+        </view>
+    </navigator>    
+    <view class="cell-item arrow">
+        <text>数量</text>
+        <view class="tui-number-group">
+            <button bindtap="subNum" class="tui-number-cell">-</button>
+            <input class="tui-number-cell" type="number" value="{{number}}"></input>
+            <button bindtap="addNum" class="tui-number-cell">+</button>
+        </view>
+    </view>       
+</view>
+<!-- 加入购物车;立即购买 -->
+<view class="divider"></view> 
+<view class="cell">
+    <navigator class="cell-item arrow">
+        <text>使用条款</text>
+        <text>轻拿轻放,不能与地面接触</text>
+    </navigator> 
+</view>
+<view class="divider"></view> 
+<view class="cell-item arrow">
+    <button class="addCart">加入购物车</button>
+    <button class="addOrder">立即购买</button>
+</view> 

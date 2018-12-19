@@ -1,0 +1,56 @@
+<!--pages/contact/contact.wxml-->
+
+<!-- 隔离带 -->
+<view class="divider"></view>
+<!-- 登录板块 -->
+<view class="cell">
+    <view class="cell-item tu">
+        <image src="/pages/logs/assets/icons/grid-07.png" mode="aspectFill"></image>
+    </view>
+    <form bindsubmit="submitHandle">
+        <!-- 用户名 -->
+        <view class="cell-item user">
+            <input type="text" name="uname" placeholder="用户名"></input>
+        </view>
+        <!-- 密码 -->
+        <view class="cell-item pwd">
+            <input type="password" name="upwd" placeholder="密码"></input>
+        </view>     
+        <!-- 注册-忘记密码  -->
+        <view class="cell-item zc-mm">
+            <navigator class="zc">注册</navigator>
+            <navigator class="mm">忘记密码?</navigator>
+        </view>            
+        <view class="cell-item dl">
+            <button formType="submit">登录</button>
+        </view>        
+    </form>
+</view>
+<view class="divider"></view>
+<view class="gd">
+    <view class="gd_wz">更多登录方式...</view>
+    <view class="gd_img">
+        <image src="/pages/logs/assets/images/QQ.jpg" mode="aspectFill" lazy-load="{{true}}"></image>
+        <image src="/pages/logs/assets/images/WeiXin.jpg" mode="aspectFill" lazy-load="{{true}}"></image>
+    </view>
+</view>
+<!-- <view class="cell">
+    <view class="cell-item">
+        <text>表单的其他组件</text>
+    </view>
+    <view class="cell-item">
+        <checkbox-group>
+            <checkbox checked>千页豆腐</checkbox>
+            <checkbox>糖醋里脊</checkbox>
+        </checkbox-group>
+    </view>
+    <view class="cell-item">
+        <radio-group>
+            <radio name="r" checked value="male">男</radio>
+            <radio name="r" value="female">女</radio>
+        </radio-group>
+    </view>
+    <view class="cell-item">
+        <switch checked name="r"/>隐私条款
+    </view>
+</view> -->

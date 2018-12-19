@@ -1,0 +1,17 @@
+/*小图的尺寸*/
+#list li img{
+    width:5.2rem !important;
+}
+/*设置渐变的灰色*/
+.my_gray{
+    background:linear-gradient(to bottom,#f0f0f0,#e0f0e4)
+}
+/*input输入框宽度*/
+.my_input_w{
+    width:2rem;
+    height:2rem;
+}
+/*为你推荐 中图片文字的宽度*/
+.my_p_w{
+    width:60%;
+}

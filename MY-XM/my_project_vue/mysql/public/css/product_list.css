@@ -1,0 +1,94 @@
+/* 设置li标签 */
+li{
+    list-style-type: none;
+}
+/*导航栏 */
+main div.daohang ul li a{
+    color:#000;
+}
+/* 导航栏--a标签悬停效果 */
+main div.daohang ul li a:hover{
+    color: #a6a;
+}
+/* 导航栏--弹性布局 */
+main div.daohang{
+    display: flex;
+    margin-left: 340px;
+}
+main div.daohang ul{
+    display: flex;
+}
+/* 调整导航栏位置 */
+main div.daohang ul.left-nav li{
+    margin-left:20px;
+}
+main div.daohang ul.right-nav li{
+    margin-left:8px;
+}
+/* 主体内容  */
+main .zhuti{
+    display: flex;
+    justify-content: space-between;
+}
+/* 主体位置设置 */
+main .zhuti .zhuti-left{
+    margin-left: 340px;
+}
+/* 主体--左边图文设置 */
+main .zhuti .zhuti-left ul li.zhuti-left-list{
+    margin-left: 20px; 
+    margin-top:20px;
+    display: flex;
+}
+/* 主体--左边图文-文字 */
+main .zhuti .zhuti-left ul li.zhuti-left-list .list-wenzi-left{
+    margin-top:15px;
+}
+/* 主体--左边图文-图片 */
+main .zhuti .zhuti-left ul li.zhuti-left-list .list-wenzi-right{
+    display: flex;
+    justify-content: space-between;
+    margin-top:80px;
+}
+/* 主体--左边图文-文字-时间与来源 */
+main .zhuti .zhuti-left ul li.zhuti-left-list .list-wenzi-right span{
+    font-size:15px;
+    color:#333;
+}
+main .zhuti .zhuti-left ul li.zhuti-left-list .list-wenzi-right a{
+    color:#333;
+    font-size:0.9rem;
+}
+main .zhuti .zhuti-left ul li.zhuti-left-list .list-wenzi-right a:hover{
+    color: #a6a;
+}
+main .zhuti .zhuti-left ul li.zhuti-left-list a img{
+    margin-left:15px;
+    width:210px;
+    height:180px;
+}
+main .zhuti .zhuti-left ul li.zhuti-left-list a img:hover{
+    opacity: 0.6;
+}
+/* 主体--右边垂直导航栏 */
+main .zhuti .zhuti-right div.zhuti-right-caidan{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 550px;  
+}
+main .zhuti .zhuti-right div.zhuti-right-title{
+    margin-left:80px;
+    font:550 1.2rem "微软雅黑";
+    margin-bottom: 20px;
+}
+main .zhuti .zhuti-right div.zhuti-right-caidan ul li{
+    text-align: center;
+}
+/* 主体--右边垂直导航栏-a标签 */
+main .zhuti .zhuti-right div.zhuti-right-caidan ul li a{
+    color:#333;
+    font-size:0.9rem;
+}
+main .zhuti .zhuti-right div.zhuti-right-caidan ul li a:hover{
+    color: #a6a;
+}

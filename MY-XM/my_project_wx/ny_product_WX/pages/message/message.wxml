@@ -1,0 +1,11 @@
+<!--pages/message/message.wxml-->
+<!-- 信息列表 --> 
+<view class="card" wx:for="{{message}}" wx:key="pid">
+    <text class="card-title">{{item.title}}</text>
+    <image src="{{item.img}}" mode="aspectFill" lazy-load="{{true}}" class="card-img"></image>
+    <view class="card-url-time">
+        <text class="card-url">网址: {{item.url}}</text>
+        <text class="card-time">发布时间: {{item.time}}天</text>
+    </view>
+    <text class="card-read arrow">查看详细</text>
+</view> 

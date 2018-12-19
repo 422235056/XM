@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/logs/logs",
+    "pages/news/news",
+    "pages/message/message",
+    "pages/profile/profile",
+    "pages/shoplist/shoplist",
+    "pages/detail/detail",
+    "pages/contact/contact",
+    "pages/userDetail/userDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#dce",
+    "navigationBarTitleText": "尘油儿",
+    "navigationBarTextStyle": "while"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#aaa",
+    "selectedColor": "#a3a",
+    "backgroundColor": "#fff",
+    "borderStyle": "#eee",
+    "list": [
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "首页",
+        "iconPath": "pages/logs/assets/tabs/home.png",
+        "selectedIconPath": "pages/logs/assets/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "猜你喜欢",
+        "iconPath": "pages/logs/assets/tabs/message.png",
+        "selectedIconPath": "pages/logs/assets/tabs/message-active.png"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "购物车",
+        "iconPath": "pages/logs/assets/tabs/contact.png",
+        "selectedIconPath": "pages/logs/assets/tabs/contact-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "pages/logs/assets/tabs/profile.png",
+        "selectedIconPath": "pages/logs/assets/tabs/profile-active.png"
+      }
+    ]
+  }
+}

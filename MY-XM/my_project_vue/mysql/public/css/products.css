@@ -1,0 +1,92 @@
+li{
+    list-style-type: none;
+}
+/* main */
+main.main_bg{
+    margin-left: 360px;
+    margin-top:50px;
+    background: #fff;
+    width: 1160px;
+}
+/* main daohang */
+main .main_daohang{
+    display: flex;
+    justify-content: space-between;
+}
+/* 面包屑导航样式 */
+main .main_daohang ul{
+    display: flex;
+}
+main .main_daohang ul li{
+    margin-left:10px;
+}
+main .main_daohang ul li a{
+    color:#666;
+    font-size:0.8rem;
+    text-decoration: none;
+}
+main .main_daohang ul.right{
+    margin-right: 60px;
+}
+/* main product list */
+main .product_list{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 35px;
+} 
+main .product_list .product_div{
+    border:1px solid #ccc;
+    margin: 3px;
+}
+/* 商品悬停效果 */
+main .product_list .product_div:hover{
+    opacity: 0.6;
+}
+/* 商品图片 */
+main .product_list .product_div .product_div_img img{
+    width:260px;
+    height:260px;
+}
+/* 商品介绍 */
+main .product_list .product_div .product_div_bottom{
+    background: linear-gradient(0deg,#ccd,#fff);
+    margin-bottom: -18px;
+    width: 260px;
+} 
+/* 商品标题 */
+main .product_list .product_div .product_div_bottom .product_title{
+    font-size: 14px;
+    margin-left: 10px;
+    width: 260px;
+}
+main .product_list .product_div .product_div_bottom .product_title .title{
+    display: block;
+}
+/* 商品副标题样式 */
+main .product_list .product_div .product_div_bottom .product_title .subtitle{
+    width: 260px;
+    display: block;
+    overflow: hidden;           /*超出部分隐藏*/
+    white-space: nowrap;        /*不允许换行 */
+    text-overflow: ellipsis;    /*超出部分补充... */
+}
+main .product_list .product_div .product_div_bottom .product_price{
+    margin-left:10px; 
+    font-size: 23px;
+    color: #a6a;
+}
+/* 分页btn */
+main .fenye{
+    display: flex;
+    justify-content: center
+}
+main .fenye li a{
+    color: #666;
+    border:1px solid #ddd;
+    font-size:18px;
+    margin: 5px;
+    text-decoration: none;
+}
+main .fenye li a.border{
+    background: linear-gradient(0deg,#a6a,#ccd) !important;
+}

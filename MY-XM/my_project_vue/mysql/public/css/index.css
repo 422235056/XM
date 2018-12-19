@@ -1,0 +1,166 @@
+/* body bg */
+body.bg{
+    background: #fff;
+}
+/* banner */
+body div.body_banner{
+    text-align: center;
+}
+/* biaoti */
+body p.body_biaoti{
+    margin-left:43.5%;
+    font:600 30px "微软雅黑";
+    margin-top:6rem; 
+}
+
+
+/* louCeng img */
+body div.body_lc{
+    margin:0 auto;
+    width:60%;
+    display:wrap;
+}
+body div img.body_lc_img{
+    width: 28%;
+}
+body div.body_lc img{
+    margin:0.3rem 0.3rem;
+    z-index: 1;
+}
+/* louCeng span */
+body div.body_lc a{
+    position: relative;
+}
+body div.body_lc a span{
+    text-align: center;
+    background:rgba(200,220,220,0.8);
+    position: absolute;
+    width:94%;
+    height:5rem;
+    top:0.8rem;
+    left:0.3rem;
+    z-index: 2;
+    display: none;
+}
+/* louCeng button */
+body div.body_lc button{
+    margin-left:0.5%;
+    width:87%;
+    height:6%;
+    color:#fff;
+    background: #4C4C4C;
+}
+body div.body_lc button:hover{
+    background: #5d126a;
+}
+
+/* 轮播图 */
+body ul{
+    list-style-type: none;
+}
+body div.body_lb ul{
+    display: flex;
+    width: 11602px;
+}
+
+/* louCeng 1 ==> 无疆行者*/
+body div.body_lc1{
+    width:63%;
+    display: wrap;
+    margin: 0 auto;
+}
+/* lc1 上半部分 img */
+body div.body_lc1_top{
+    padding-left:3.3%;
+}
+/* lc1 下半部分 img */
+body div.body_lc1_bottom{
+    display: flex;
+    justify-content: space-between;
+    width:65rem;
+}
+body div.body_lc1_bottom ul li img{
+    border:1px solid #ddd;
+    border-radius: 5px;
+    margin:1px;
+    width:100%;
+}
+body div.body_lc1_bottom div.body_lc1_left{
+    width:45%;
+}
+body div.body_lc1_bottom div.body_lc1_right{
+    margin-left:1rem;
+    width:45%;
+}
+
+/* louCeng2 fenYe ==> 良工巧匠*/
+body div.body_lc2{
+    width:63%;
+    display: wrap;
+    margin: 0 auto;
+}
+/* lc2 上半部分 */
+body div.body_lc2_top{
+    padding-left:3.3%;
+}
+/* lc2 下半部分 */
+body div.body_lc2_bottom{
+    display: flex;
+    justify-content: space-between;
+    width:65rem;
+}
+body div.body_lc2_bottom ul li a img{
+    height:100%;
+}
+body div.body_lc2_bottom ul li img.body_lc2_bigImg{
+    width:100%;
+    height:100%;
+}
+/* lc2 li */
+body div.body_lc2_bottom ul li{
+    height:10rem;
+    display: flex;
+    justify-content: start;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    margin:1px;
+    padding: 0;
+}
+/* lc2 bigImg li  */
+body div.body_lc2_bottom ul li.body_lc2_big{
+    height:21rem ;
+}
+/* lc2 li div wenzi  */
+body div.body_lc2_bottom ul li div.body_lc2_intro{
+    margin-top:3rem;
+    margin-left:1.2rem;
+    height:5rem;
+}
+body div.body_lc2_bottom ul li div.body_lc2_intro p.body_lc2_p1{
+    font:600 0.9rem "微软雅黑";
+    text-align: end;
+    margin-bottom:-0.2rem;
+}
+body div.body_lc2_bottom ul li div.body_lc2_intro p.body_lc2_p2{
+    font-size:1rem;
+    text-align: end;
+    margin-top:0.5rem;
+}
+body div.body_lc2_bottom ul li div.body_lc2_intro p.body_lc2_p3{
+    color:#999;
+    font-size:0.9rem;
+    text-align: end;
+    margin-top:-0.8rem;
+}
+body div.body_lc2_bottom ul li div.body_lc2_intro p.body_lc2_p3 span{
+    font-size:1.4rem;
+    color:#612177;
+}
+/* left-right  */
+body div.body_lc2_bottom div.body_lc2_left{
+    width:45%;
+}
+body div.body_lc2_bottom div.body_lc2_right{
+    margin-left:1rem;
+    width:45%;
+}

@@ -1,0 +1,53 @@
+/* pages/contact/contact.wxss */
+/* 图标 */
+.tu{
+    text-align: center
+}
+.tu image{
+    width: 120rpx;
+    height: 120rpx;
+}
+/* 用户名 */
+.user input{
+    padding-left: 20rpx;
+    font-size: 26rpx;
+}
+/* 密码 */
+.pwd input{
+    padding-left: 20rpx;
+    font-size: 26rpx;
+}
+/* 注册--忘记密码 */
+.zc-mm{
+    display: flex;
+    justify-content: space-between;
+}
+.zc-mm .zc{
+    margin-left:20rpx; 
+    font-size: 21rpx;
+}
+.zc-mm .mm{
+    margin-right:20rpx; 
+    font-size: 21rpx;
+}
+/* 登录按钮 */
+.dl button{
+    background: linear-gradient(0deg,#def,#c6c)
+}
+/* 更多登录方式 */
+.gd{
+    display: flex;
+    justify-content: space-between;
+}
+/* 更多登录方式--文字 */
+.gd .gd_wz{
+    font-size: 25rpx;
+    color: #a6a;
+    margin-left: 30rpx;
+}
+/* 更多登录方式--图片 */
+.gd .gd_img image{
+    width: 35rpx;
+    height: 45rpx;
+    margin-right: 30rpx;
+}

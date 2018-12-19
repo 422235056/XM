@@ -1,0 +1,49 @@
+/* pages/detail/detail.wxss */
+.slider,.slider image,.slider swiper{
+    width: 100%;
+    height: 390rpx;
+}
+/*商品标题*/
+.shop-title{
+    font-size: 18px;
+    color:#333;
+}
+/* 商品价格 */
+.priceInfo .oldprice{
+    color: #ccc;
+    text-decoration: line-through;
+    margin-right: 15rpx;
+}
+.priceInfo .newprice{
+    color: red;
+    font-size: 18px;
+}
+/* 数量按钮 */
+.tui-number-group{
+    display:table;
+    table-layout: fixed;
+    width: 300rpx;
+    text-align: center;
+    border-radius: 6rpx;
+    overflow: hidden;
+    border: 1px solid #bbb;
+}
+.tui-number-cell{
+    display: table-cell;
+    line-height: 1.7;
+    border-radius: 0;
+}
+button::after{
+    border-bottom: none;
+    border-top: none;
+    border-radius: 0;
+}
+/* 两个按钮 */
+.addCart{
+    background: #fc0;
+    font-size: 14px;
+}
+.addOrder{
+    background:#fc6;
+    font-size: 14px;
+}

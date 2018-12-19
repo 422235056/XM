@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>风向 全球获奖商品精选</title>
+  <link rel="stylesheet" href="lunbo.css">
+</head>
+<body>
+  <div class="carousel-wrap">
+    <ul class="carousel">
+      <li><img src="public/img/floor/LB_01.png" alt=""></li>
+      <li><img src="public/img/floor/LB_02.png" alt=""></li>
+      <li><img src="public/img/floor/LB_03.png" alt=""></li>
+      <li><img src="public/img/floor/LB_04.png" alt=""></li>
+      <li><img src="public/img/floor/LB_05.png" alt=""></li>
+      <li><img src="public/img/floor/LB_06.png" alt=""></li>
+      <li><img src="public/img/floor/LB_07.png" alt=""></li>
+      <li><img src="public/img/floor/LB_08.png" alt=""></li>
+    </ul>
+    <a class="arrow arrow-left" href="">&lt;</a>
+    <a class="arrow arrow-right" href="">&gt;</a>
+    <ul class="indicators">
+      <li class="indicator active"></li>
+      <li class="indicator"></li>
+      <li class="indicator"></li>
+      <li class="indicator"></li>
+      <li class="indicator"></li>
+    </ul>
+  </div>
+  <script src="jquery-3.2.1.js"></script>    
+  <script>
+    var carousel = $('ul.carousel'),
+        arrowLeft = $('a.arrow-left'),
+        arrowRight = $('a.arrow-right'),
+        indicators = $('li.indicator'),
+        carouselWrap = $('div.carousel-wrap');
+    var num = 5,carouselWidth=490,count=1,timer=null;
+    //设置左右箭头的点击事件
+    arrowLeft.click(function (e) {
+      e.preventDefault()
+      move(true)
+    })
+    arrowRight.click(function(e){
+      e.preventDefault()
+      move()
+    })
+
+    // 指示器
+    indicators.click(function () {
+      count = $(this).index()
+      setIndicatorStyle()
+      carousel.finish().animate({left:-carouselWidth*count},500)
+    })
+
+    // 设置指示器样式
+    function setIndicatorStyle(){
+      indicators.eq(count-1).addClass('active').siblings().removeClass('active')
+    }
+
+    interval()
+    // 鼠标移入  暂停 自动轮播
+    carouselWrap
+      .mouseover(function () {
+        clearInterval(timer)
+      })
+      .mouseout(interval)   // 鼠标移开 记录轮播
+
+    // 动画 主函数
+    function move(flag) {
+      if(!flag){
+        count++
+        l = -carouselWidth*count
+        if(count===num-1){
+          carousel.finish().animate({
+            left: l
+          }, 500, function(){
+            count = 1
+            setIndicatorStyle()
+            $(this).css('left', -carouselWidth*count)
+          })
+        }else{
+          setIndicatorStyle()
+          carousel.finish().animate({
+            left: l
+          }, 500)
+        }
+      }else{
+        count--
+        l = -carouselWidth*count
+        if(count === 0){
+          carousel.finish().animate({
+            left: l
+          }, 500, function(){
+            count = num - 2
+            setIndicatorStyle()
+            $(this).css('left', -carouselWidth*count)
+          })
+        }else{
+          setIndicatorStyle()
+          carousel.finish().animate({
+            left: l
+          }, 500)
+        }
+      }
+    }
+    // 自动轮播
+    function interval() {
+      timer = setInterval(move, 2000)
+    }
+  </script>
+</body>
+</html>

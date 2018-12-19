@@ -1,0 +1,8 @@
+<!--pages/userDetail/userDetail.wxml-->
+<view class="avatar">
+    <video src="/pages/logs/assets/images/x.mp4" controls></video>
+</view>
+<view class="divider"></view>
+<view>
+    <canvas canvas-id="can3" style="width:745rpx;height:380rpx;border:1px solid red"></canvas>
+</view>

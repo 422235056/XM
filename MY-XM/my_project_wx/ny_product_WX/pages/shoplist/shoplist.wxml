@@ -1,0 +1,19 @@
+<!--pages/shoplist/shoplist.wxml-->
+<!-- 商品的项目列表 -->
+<view class="shop" wx:for="{{shoplist}}" wx:key="{{id}}">
+    <image bindtap="showDetail" data-pid="{{item.id}}" src="{{item.img}}"  mode="aspectFill" lazy-load="{{true}}" class="shop-img"></image>
+    <view class="shop-info">
+        <text class="shop-title"> {{item.title}} </text>
+        <text class="shop-details ell">{{item.details}}</text>
+        <text class="shop-price">¥ {{item.price}}</text>
+    </view>
+    <view class="shop-start">
+        <view class="star-after">
+            ★★★★★
+        </view>
+        <view class="star-before" style="width:{{item.price*0.3}}%">
+            ★★★★★
+        </view>
+    </view>    
+</view>
+<view class="loadmore loading" wx:if="{{hasMore}}">正在加载...</view> 

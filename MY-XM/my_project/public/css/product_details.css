@@ -1,0 +1,283 @@
+li{
+    list-style-type: none;
+}
+/*  product tuwen show */
+main{
+    background: white;
+    margin-bottom: 180px;
+    width: 1160px;
+    margin-left: 350px;
+}
+/*tw*/
+main .product_tw{
+    display: flex;
+    justify-content: space-between;
+}
+/* tw left */
+main .product_tw .tw_left{
+    display: flex;
+}
+main .product_tw .tw_left .left_min li{
+    list-style-type:none;
+}
+/* 图文左边--小图-大图 */
+main .product_tw .tw_left .left_min img{
+    width: 80px;
+}
+main .product_tw .tw_left .right_max img{
+    width: 380px;
+    margin-left: 50px;
+}
+/* tw right */
+main .product_tw .tw_right{
+    margin-left: 50px;
+    margin-right: 30px;
+    width: 445px;
+}
+/* 图文右边--标题 */
+main .product_tw .tw_right .tw_title_top,.tw_title_bottom{
+    font-size: 14px;
+    color: #666;
+}
+main .product_tw .tw_right .tw_title{
+    font-size: 21px;
+    font-weight: 600;
+}
+/* 图文右边--价格 */
+main .product_tw .tw_right .tw_price{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+}
+main .product_tw .tw_right .tw_price a{
+    text-decoration: none;
+    color: #a6a;
+    font-size: 14px;
+}
+main .product_tw .tw_right .tw_price a.tw_price_left{
+    font-size: 21px;
+    font-weight: 600;
+}
+/* 图文右边--副标题-详细介绍 */
+main .product_tw .tw_right .tw_subtitle{
+    color: #a6a;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+main .product_tw .tw_right .tw_detail{
+    font-size: 12px;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+}
+/* 图文右边--更多-官网btn */
+main .product_tw .tw_right .tw_more{
+    display: flex;
+    margin-top:35px; 
+}
+main .product_tw .tw_right .tw_more a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    width: 45px;
+    height: 25px;
+    background: #fff;
+    border: 1px solid #a6a;
+    color: #000;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+main .product_tw .tw_right .tw_more a:hover{
+    color: #a6a;
+}
+main .product_tw .tw_right .tw_more p{
+    font-size: 14px;
+}
+/* 右下角小图标--回到顶部-二维码  */
+body{
+    position: relative;
+}
+.right_bottom_icon{
+    position: fixed;
+    right: 150px;
+    bottom: 100px;
+}
+.right_bottom_icon img{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.QRcode{
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    right: 200px;
+    bottom: 150px;
+}
+.QRcode img{
+    width: 100%;
+}
+
+/* 下面的图文介绍部分 */
+/* 整体设置 */
+.xm{
+    margin-top: 100px;
+    margin-left: 20px;
+    width: 1160px;
+    border-top:1px solid #ccc; 
+    padding-top: 50px;
+}
+/* 图文部分 */
+.xm .tw_list ul{
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    padding: 0
+}
+/* 图文--图片部分 */
+.xm .tw_list .tw_list_left{
+    width: 60%;
+}
+.xm .tw_list .tw_list_left img{
+    width: 100%;
+}
+/* 图文--文字 */
+.xm .tw_list .tw_list_right{
+    width: 35%;
+    border-bottom: 1px solid #a6a;
+}
+/* 图文--文字-标题 */
+.xm .tw_list .tw_list_right .tw_title{
+    font-size: 25px;
+    color: #ccd;
+}
+/* 图文--文字-内容 */
+.xm .tw_list .tw_list_right .tw_subtitle{
+    margin-top: 50px;
+    font-size: 14px;
+    color: #a6a;
+}
+
+/* 用户评论区 */
+/* 用户评论--上半区-商品参数 */
+.xm_comment_top{
+    width: 1160px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+}
+/* 商品参数--标题 */
+.xm_comment_top .comment_title{
+    font-size: 23px;
+    margin-top: 15px;
+    color: #ccd;
+}
+/* 商品参数--第一行 */
+.xm_comment_top .canshu_one{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.xm_comment_top .canshu_one span{
+    margin-left: 30px;
+    color: #a6a;
+    font-size: 14px;
+}
+/* 商品参数--第二行 */
+.xm_comment_top .canshu_two{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -2px;
+}
+.xm_comment_top .canshu_two span{
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #a6a;
+    font-size: 14px;
+}
+.xm_comment_top .canshu_two .canshu_two_right{
+    position: relative;
+    left: -30px;
+}
+/* 用户评论--下半区-评价 */
+/* 整体 */
+.xm_comment_bottom{
+    width: 1160px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+}
+/* 用户评论区--设置两端对齐 */
+.xm_comment_bottom .pinglun{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* 用户评论区--标题 */
+.xm_comment_bottom .comment_title{
+    font-size: 23px;
+    margin-top: 15px;
+    color: #ccd;
+}
+/* 用户评论区--评分or用户名区域 */
+.xm_comment_bottom .use_comment_one{
+    background: linear-gradient(0deg,#eee,#eff);
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 20px;
+}
+/* 用户评论区--用户名区域 */
+.xm_comment_bottom .use_comment_one .use_comment_one_left{
+    font-size: 12px;
+    color: #a6a;
+    opacity: 0.8;
+}
+/* 用户评论区--历史留言板 */
+.xm_comment_bottom .use_comment_two{
+    margin-left: 0px;
+    color: #666;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 400px;
+    height: 35px;
+}
+/* 用户评论区--加载更多 */
+.xm_comment_bottom .pinglun_more{
+    color: #ccc;
+    font-size: 14px;
+}
+/*  星星 */
+.shop-start{
+    position: relative;
+}
+.shop-start .star-after{
+    color: #e2e2e2;
+  }
+.shop-start .star-before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:#ffd700;
+    width: 90%;
+    overflow: hidden;
+}
+/* 用户评论区域--右边-发表评论 */
+.xm_comment_bottom .pinglun .pinglun_right{
+    width: 300px;
+    height: 160px;
+    background: linear-gradient(0deg,#eee,#eff);
+}
+.xm_comment_bottom .pinglun .pinglun_right a{
+    display: block;
+    margin-top: 60px;
+    color: #a6a;
+    list-style-type: none;
+    font-size: 14px;
+}
+.xm_comment_bottom .pinglun .pinglun_right a:hover{
+    opacity: 0.8;
+    font-size: 15px;
+}

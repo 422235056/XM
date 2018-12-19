@@ -1,0 +1,76 @@
+<!-- log 主导航 -->
+<view class="daohang">
+  <view class="logo">
+    <navigator>
+      <image src="assets/images/logo5.png" mode="aspectFill"></image>
+    </navigator>
+  </view>
+    <navigator class="dp" hover-class="daohang_hover">单品</navigator>
+    <navigator class="zx" hover-class="daohang_hover">资讯</navigator>
+  <view class="ss">
+      <input hover-class="active" type="text" placeholder="搜索" style="background: #fff url('assets/images/sousuo.png') no-repeat 97% center">
+      </input>
+  </view>
+</view>
+
+<!--logs.wxml 首页-->
+<view class="slider">
+  <swiper autoplay interval="3500" indicator-dots="{{false}}">
+    <swiper-item wx:for="{{banner}}" wx:key="{{fid}}">
+      <image src="{{item.img}}"/>
+    </swiper-item>
+  </swiper>
+</view> 
+<!-- 分隔区域 -->
+<view class="divider">
+</view>
+<!-- 首页的导航分区 -->
+<view class="index-nav">
+  <navigator class="nav-item" url="/pages/shoplist/shoplist"> 
+    <image src="assets/icons/grid-01.png" mode="aspectFill" width="33.3%"></image>
+    <text>女装</text>
+  </navigator>
+  <navigator class="nav-item" url="/pages/detail/detail">
+    <image src="assets/icons/grid-02.png" mode="aspectFill" width="33.3%" ></image>
+    <text>男装</text>
+  </navigator>
+  <navigator class="nav-item" url="/pages/userDetail/userDetail">
+    <image src="assets/icons/grid-03.png" mode="aspectFill"></image>
+    <text>户外</text>
+  </navigator>
+  <navigator class="nav-item" url="/pages/detail/detail">
+    <image src="assets/icons/grid-06.png" mode="aspectFill"></image>
+    <text>家电</text>
+  </navigator>
+  <navigator class="nav-item" url="/pages/message/message">
+    <image src="assets/icons/grid-08.png" mode="aspectFill"></image>
+    <text>汽车</text>
+  </navigator>
+</view>
+
+<!-- 分隔区域 -->
+<view class="divider">
+</view>
+<!-- 楼层 -->
+<view class="floor">
+  <view class="floor_left">
+    <navigator wx:for="{{floor1}}" wx:key="{{fid}}">
+      <image src="{{item.img}}" mode="aspectFill" lazy-load="{{true}}"></image>
+      <view class="xx">
+        <view class="xx_title">{{item.title}}</view>
+        <view class="xx_details">{{item.details}}</view>
+        <view class="xx_price">¥{{item.price}}</view>
+      </view>
+    </navigator>
+  </view>
+  <view class="floor_right">
+    <navigator wx:for="{{floor2}}" wx:key="{{fid}}">
+      <image src="{{item.img}}" mode="aspectFill" lazy-load="{{true}}"></image>
+      <view class="xx">
+        <view class="xx_title">{{item.title}}</view>
+        <view class="xx_details">{{item.details}}</view>
+        <view class="xx_price">¥{{item.price}}</view>
+      </view>
+    </navigator>  
+  </view>
+</view>

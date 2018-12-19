@@ -1,0 +1,29 @@
+body{
+    background:#f5f5f5;
+    margin:0;
+    padding:0;
+}
+/*设置小字体*/
+.my_small{
+    font-size:0.8rem;
+}
+/*设置引入头部的高宽*/
+.my_header{
+    width:100%;
+}
+@media screen and (max-width: 991px){
+    .my_header{
+        width:100%;
+        height:14rem;
+    }
+}
+.my_footer{
+    width:100%;
+    height:23rem;
+}
+@media screen and (max-width:991px){
+    .my_footer{
+        width:100%;
+        height:37rem;
+    }
+}
